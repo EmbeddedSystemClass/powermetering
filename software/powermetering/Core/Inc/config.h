@@ -11,11 +11,10 @@
 #include <lwip/sockets.h> 
 #include <string.h>
 
-#define CONFIG_ADDRESS  0x08008000
-#define CONFIG_SIZE     16*1024
-#define CONFIG_SECTOR   FLASH_SECTOR_2
-#define CONFIG_STRINGLENGTH 32
-
+#define CONFIG_ADDRESS  	0x08008000
+#define CONFIG_SIZE     	16*1024
+#define CONFIG_SECTOR   	FLASH_SECTOR_2
+#define CONFIG_STRINGLENGTH	32
 
 void config_write(uint8_t*, uint32_t);
 uint32_t config_read(uint8_t*, uint32_t);
